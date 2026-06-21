@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Toss To Finish Live Overlay</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="overlay">
+  <div class="topbar">
+    <div class="live-pill">● LIVE</div><div id="matchType">CRICKET LIVE</div><div id="venueTop">VENUE</div>
+    <div id="updateStatus" class="update">Connecting...</div><div class="brand">TOSS TO FINISH <span>LIVE</span></div>
+  </div>
+  <div class="score-row">
+    <div class="team-panel blue"><div id="teamA" class="team-name">TEAM A</div><div id="scoreA" class="score">--</div><div id="oversA" class="overs">-- OVERS</div></div>
+    <div class="vs-box">VS</div>
+    <div class="team-panel red"><div id="teamB" class="team-name">TEAM B</div><div id="scoreB" class="score">--</div><div id="oversB" class="overs">-- OVERS</div></div>
+  </div>
+  <div class="stats-row">
+    <div><small>CRR</small><b id="crr">--</b></div><div><small>RRR</small><b id="rrr">--</b></div><div><small>TOSS</small><b id="toss">--</b></div>
+    <div><small>TARGET</small><b id="target">--</b></div><div><small>REQ. RUNS</small><b id="reqRuns">--</b></div><div><small>REQ. BALLS</small><b id="reqBalls">--</b></div>
+  </div>
+  <div class="recent"><span class="label">RECENT BALLS</span><div id="recentBalls" class="balls"></div><span id="currentOver" class="over-box">OVER --</span></div>
+  <div class="main">
+    <div class="facecam"><div class="face-title">🎙 LIVE COMMENTARY</div><div class="face-box">CAMERA FRAME</div><div class="channel">TOSS TO FINISH LIVE</div></div>
+    <div class="center"><div class="pitch"></div><div class="player-cards">
+      <div class="card"><small>BATTER</small><h3 id="bat1">--</h3><h2 id="bat1runs">--</h2><p id="bat1extra">4s: -- | 6s: -- | SR: --</p></div>
+      <div class="card"><small>BATTER</small><h3 id="bat2">--</h3><h2 id="bat2runs">--</h2><p id="bat2extra">4s: -- | 6s: -- | SR: --</p></div>
+      <div class="card bowler"><small>BOWLER</small><h3 id="bowler">--</h3><h2 id="bowlerFig">--</h2><p id="bowlerExtra">Overs: -- | Econ: --</p></div>
+    </div></div>
+    <div class="side"><div><small>LAST WICKET</small><b id="lastWicket">--</b></div><div><small>MATCH STATUS</small><b id="status">Waiting for live data</b></div><div><small>VENUE</small><b id="venue">--</b></div><div><small>SERIES</small><b id="series">--</b></div></div>
+  </div>
+  <div class="bottom"><div>▶ LIVE SCORE</div><div>💬 FAN CHAT</div><div>🎙 ORIGINAL COMMENTARY</div><div>📊 MATCH ANALYSIS</div><div class="sub">SUBSCRIBE 🔔</div></div>
+  <div class="disclaimer">ORIGINAL COMMENTARY | NO MATCH FOOTAGE | No copyrighted broadcast audio/video. Only self-created commentary, analysis & live score.</div>
+</div>
+<script src="config.js"></script><script src="script.js"></script>
+</body>
+</html>
